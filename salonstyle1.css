@@ -119,6 +119,11 @@ body, html {
     box-sizing: content-box;
     transition: background .5s; 
   }
+
+.nav .container {
+  max-width: 100%;
+  display: flex;
+}
   
 .btn:hover, .nav ul li:hover {
     background:  #e3e8e8;
