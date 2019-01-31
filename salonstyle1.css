@@ -291,6 +291,7 @@ body, html {
 
 #num a:hover{
   text-decoration: none;
+  color:  #3385ff;
 }
 
 a[href^=tel] {
@@ -448,7 +449,7 @@ table.center3 {
   position: fixed;
   bottom: 20px;
   right: 35px;
-  display:none;
+  /* display:none; */
   /* background-color: #c2ccd6;
   border-color: #bbbfc3; */
 }
