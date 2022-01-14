@@ -1,394 +1,387 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  
-  <link href="salonn.js" type="text/javascript">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Radley" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <title>Totally Nu Yu Hair Salon</title>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <link href="salonstyle1.css" type="text/css" rel="stylesheet">
+    <!-- boostrap 5.0 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="main.css" type="text/css" />
 
-</head>
+    <script src="app.js"></script>
 
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c5a9589e6f.js" crossorigin="anonymous"></script>
 
-  <div class="nav">
-    <div class="container">
-      <ul>
-        <!-- <li>Home</li> -->
-        <li><a href="#stylists">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#hours&location">Hours & Location</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Radley"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=PT+Serif+Caption"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    />
+    <!-- boostrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<!-- Home Page  -->
 
-  <div class="homep">
-    <img class="brick" src="brick.jpg" alt="brick wall">
+    <script>
+    function toggleMenu() {
+      var x = document.getElementById("menu");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        console.log("boop");
+      } else {
+        x.className = "topnav";
+        console.log("shoop");
+      }
+    }
+    </script>
+
+    <title>Totally Nu Yu Hair Salon</title>
+  </head>
+  <!-- BOOSTRAP NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light nav-bkgrnd">
+      <div class="container-fluid">
+        <button class="toggle-btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto main-nav">
+            <a class="nav-link link-1" href="#stylists">About</a>
+            <a class="nav-link link-2" href="#services">Services</a>
+            <a class="nav-link link-3" href="#hours&location">Hours & Location</a>
+            <a class="nav-link link-4" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <button
+    type="button"
+    class="btn btn-floating btn-lg"
+    id="btn-back-to-top"
+    >
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <body>
+    <!-- Home Page  -->
+    <div class="homep">
+      <img class="brick" src="imgs/brick.jpg" alt="brick wall" />
       <div class="bkgrdbox">
         <p class="welcomebox">Welcome &nbsp; to</p>
-        <img class="scis" src="scissors.png" alt="scissors"> 
-        <h1 class="name"> Totally Nu Yu </h1>
+        <img class="scis" src="imgs/scissors.png" alt="scissors" />
+        <h1 class="name">Totally Nu Yu</h1>
         <p id="est">est. 1991</p>
       </div>
-      
+    </div>
+    <br />
+    <br />
 
-  </div>
+    <!-- Stylists -->
+    <a name="stylists"></a>
+    <div class="clearfix" class="d-block w-100">
+      <img class="duo" src="imgs/trim.jpg" alt="trimming hair" />
+      <div style="background-color: #dde4e4" class="sideinfo side-info-pane">
+        <img class="duoim" src="imgs/i0.png" alt="scissors" />
+        <h4 class="w1">Home to</h4>
 
-<br>
-<br>
-
-<!-- Stylists -->
-<a name="stylists" ></a>
-  <div class="clearfix" class="d-block w-100">
-    <img class="duo" src="trim.jpg" alt="trimming hair">
-      <div class="sideinfo side-info-pane" style="background-color: #dde4e4">
-        <img class="duoim" src="i0.png" alt="scissors">
-      <h4 class="w1"> Home to </h4>
-                  
-      <h2 class="w2"> Shear Geniuses </h2>
-        <p class="w4"> With over 28 years of experience, we have confidence in making you
-          <br>a <i>Totally Nu Yu</i>.<br><br> Hair-styling is a collaborative effort. Not only will
-          we share our <br> expertise to bring your hairstyle vision to life but also our knowledge
-          <br>so you can create & maintain it on your own. We've got you covered<br>from fades to foils
-          and specialize in colouring, permanents and<br>Asian hairstyling. As locals to the immensely diverse Hamilton,<br>we embrace all. 
-          If it helps, we can fluently communicate in<br>Chinese (Cantonese & Mandarin), Vietnamese, Italian and Portuguese.</p>
-          <img class="decal" src="decall.png" alt="decal">
-
+        <h2 class="w2">Shear Geniuses</h2>
+        <p style="margin: 0.5em 3em 0 3em; text-align: center; font-family: Quicksand, sans-serif; padding: 0 1.5em;" class="w4">
+            With over 28 years of experience, we have confidence in making you a <b><i>Totally Nu Yu</i></b>
+            <br /><br />
+            Hair-styling is a collaborative effort. Not only will we share our
+            expertise to bring your hairstyle vision to life but also our
+            knowledge so you can create & maintain it on your own.<span>We've got
+            you covered from fades to foils and specialize in colouring,
+            permanents and Asian hairstyling.</span><span> As locals to the immensely
+            diverse Hamilton,we embrace all. If it helps, we can fluently
+            communicate in Chinese (Cantonese & Mandarin), Vietnamese,
+            Italian and Portuguese.</span>
+        </p>
+        <img class="decal" src="imgs/decall.png" alt="decal" />
       </div>
-      
-  </div>
+    </div>
 
-  <!-- <div>
-    <h4>Tammy</h4>
-    <h5> -Head Stylist & Owner-</h5>
-    <p> She's been in the hair industry for almost 30 years. 
-        Can communicate Cantonese, Mandarin and Vietnamese.
-    </p>
-    
-  </div> -->
- 
-
-<!-- Services -->
-<a name="services" ></a>
-  <div class="clearfix">
-
-      <img class="duo1" src="blow.jpg" alt="blowdry">
-      <div id="carouselExCtrl3" class="carousel slide w-50" data-ride="carousel" style="height: 740px !important; overflow-y: hidden;">
+    <!-- SERVICES vvvvvvv -->
+    <a name="services"></a>
+    <div class="clearfix">
+      <img class="duo1" src="imgs/blow.jpg" alt="blowdry" />
+      <div id="carouselExampleIndicators" class="carousel slide service-width" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="sideinfo2 side-info-pane" style="background-color: #dde4e4">
-              <img class="duoim1" src="i5.png" alt="male/female haircut">
-              <h4 class="w1"> it's time for a <i>Nu Yu</i></h4>
-              <h2 class="w2"> Our Services </h2>
-              <p class="w4"> We offer a wide variety of services that go beyond what's <br>listed here.
-                We also try our best to stay current with what's new <br> in the hair industry. Sometimes we're
-                not familiar with a style but we are<br> open to working with you to bring your vision to life. 
-                <br><br>Don't find what you're looking for?<br>Give us a call or come in for a consultation.</p>
-               <br>
-              <p class="w3"> <i><u>Please note</u>:</i> prices are determined by the length & density<br> of hair examined in person.
-                Taxes are not included. </p>
-                <img class="decal" src="decall.png" alt="decal">  
+            <div
+              class="sideinfo2 side-info-pane"
+              style="background-color: #dde4e4"
+            >
+              <div class="our-services data-container">
+                <img class="duoim1" src="imgs/i5.png" alt="male/female haircut" />
+                <h4 class="w1">it's time for a <i>Nu Yu</i></h4>
+                <h2 class="w2">Our Services</h2>
+                <p class="w4">
+                  We offer a wide variety of services that go beyond what's
+                  <br />listed here. We also try our best to stay current with
+                  what's new <br />
+                  in the hair industry. Sometimes we're not familiar with a style
+                  but we are<br />
+                  open to working with you to bring your vision to life.
+                  <br /><br />Don't find what you're looking for?<br />Give us a
+                  call or come in for a consultation.
+                </p>
+                <br />
+                <p class="w3">
+                  <i><u>Please note</u>:</i> prices are determined by the length &
+                  density<br />
+                  of hair examined in person. Taxes are not included.
+                </p>
+                <img class="decal" src="imgs/decall.png" alt="decal" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="sideinfo2 side-info-pane"
+              style="background-color: #dde4e4"
+            >
+              <div class="data-container">
+                <h2 class="ser">
+                  Hair
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                </h2>
+                <table class="center">
+                  <tr>
+                    <td> Haircut & blowdry</td>
+                    <td>Barber cut</td>
+                  </tr>
+                  <tr>
+                    <td>Trim/Clean-up</td>
+                    <td>Wash & styling</td>
+                  </tr>
+                  <tr>
+                    <td>Blowdry</td>
+                    <td>Blow-out</td>
+                  </tr>
+                  <tr>
+                    <td>Up-style</td>
+                    <td>Special occasion style</td>
+                  </tr>
+                  <tr>
+                    <td>Colour</td>
+                    <td>Color correction</td>
+                  </tr>
+                  <tr>
+                    <td>Foil</td>
+                    <td>Root touch-up</td>
+                  </tr>
+                  <tr>
+                    <td>Partial highlights</td>
+                    <td>Full highlights</td>
+                  </tr>
+                  <tr>
+                    <td>Balayage</td>
+                    <td>Ombre</td>
+                  </tr>
+                  <tr>
+                    <td>Perm</td>
+                    <td>Permanent wave</td>
+                  </tr>
+                  <tr>
+                    <td>Conditioning treatment</td>
+                    <td width="350px">
+                      Japanese hair straightening &nbsp;
+                      <p>&nbsp; <i>*Cut and blow-out not included</i></p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="sideinfo2 side-info-pane"
+              style="background-color: #dde4e4; justify-content: space-around"
+            >
+              <div class="data-container">
+                <h2 class="beauty-txt ser">
+                  BEAUTY &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                </h2>
+                <table class="center">
+                  <tr>
+                    <td>Bridal Make-Up</td>
+                    <td>Permanent Makeup: Eyebrow</td>
+                  </tr>
+                  <tr>
+                    <td>Brow Tint</td>
+                    <td>Permanent Makeup: Eyeline</td>
+                  </tr>
+                  <tr>
+                    <td>Lash Tint</td>
+                    <td>Permanent Makeup: Lipline</td>
+                  </tr>
+                  <tr>
+                    <td>Lash Perm</td>
+                    <td width="350px">Permanent Makeup: Full Lip</td>
+                  </tr>
+                </table>
+                <h2 class="ser4">
+                  WAXING &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                </h2>
+                <table class="center3">
+                  <tr>
+                    <td>Brows</td>
+                    <td width="350px">Facial Area</td>
+                  </tr>
+                  <tr>
+                    <td>Lip</td>
+                    <td>Chin</td>
+                  </tr>
+                  <tr>
+                    <td>Chest</td>
+                    <td>Back</td>
+                  </tr>
+                  <tr>
+                    <td>Half Arm</td>
+                    <td>Full Arm</td>
+                  </tr>
+                  <tr>
+                    <td>Full Leg</td>
+                    <td>Half Leg</td>
+                  </tr>
+                  <tr>
+                    <td>Under Arms</td>
+                    <td>Bikini Line</td>
+                  </tr>
+                </table>
+              </div>
             </div>
             
-          </div>
-          <div class="carousel-item">
-              <div class="sideinfo2 side-info-pane" style="background-color: #dde4e4">
-                 
-                 <h2 class="ser">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; WOMEN &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
-                 <table class="center">
-                   <tr>
-                     <td>Cut</td>
-                     <td>$28+</td>
-                   </tr>
-                   <tr>
-                     <td>Blow-out</td>
-                     <td>$20+</td>
-                   </tr>
-                   <tr>
-                     <td>Up-Style</td>
-                     <td>$45+</td>
-                   </tr>
-                   <tr>
-                     <td>Conditioning Treatment</td>
-                     <td>$35+</td>
-                   </tr>
-                   <tr>
-                     <td>Colour</td>
-                     <td>$65+</td>
-                   </tr>
-                   <tr>
-                    <td>Partial Highlights</td>
-                    <td>$75+</td>
-                   </tr>
-                   <tr>
-                     <td>Full Highlights</td>
-                     <td>$85+</td>
-                   </tr>
-                   <tr>
-                     <td>Permanent Wave</td>
-                     <td>$85+</td>
-                   </tr>
-                   <tr>
-                     <td width="350px">Japanese Hair Straightening &nbsp;
-                       <p>&nbsp; <i>*cut and blow-out not included</i> </p>
-                     </p></td>
-                     <td>$200+</td>
-                   </tr>
-                   <tr>
-                     <td>Bridal style</td>
-                     <td>$55+</td>
-                   </tr>
-                 </table>
-
-                 <br><br><br>
-                 <div class="table-container">
-                   <div style="display:inline-block">
-                 <h2 class="ser2"> &emsp;&emsp;&emsp;&emsp; MEN &emsp;&emsp;&emsp;&emsp;</h2>
-                 <table class="center1">
-                    <tr>
-                      <td>Cut</td>
-                      <td>$20+</td>
-                    </tr>
-                    <tr>
-                      <td>Colour</td>
-                      <td>$55+</td>
-                    </tr>
-                    <tr>
-                      <td width="81%">Partial Highlights</td>
-                      <td>$65+</td>
-                    </tr>
-                    <tr>
-                      <td>Permanent Wave</td>
-                      <td>$65+</td>
-                    </tr>
-                  </table>
-                </div>
-                <div style="display:inline-block">
-                 <h2 class="ser3">&nbsp;&emsp;&emsp;&emsp; KIDS &emsp;&emsp;&emsp;&nbsp;</h2>
-                 <table class="center2">
-                   <tr>
-                     <td width="78%">Cut</td>
-                     <td>$15+</td>
-                   </tr>
-                  </table>
-                </div>
-                </div>
-
-                   
-                </div>
-          </div>
-          
-          <div class="carousel-item">
-              <div class="sideinfo2 side-info-pane" style="background-color: #dde4e4; justify-content: space-around">
-                 <h2 class="ser">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; BEAUTY &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
-                 <table class="center">
-                    <tr>
-                      <td>Bridal Make-Up</td>
-                      <td>$55+</td>
-                    </tr>
-                    <tr>
-                      <td>Brow Tint</td>
-                      <td>$16+</td>
-                    </tr>
-                    <tr>
-                      <td>Lash Tint</td>
-                      <td>$20+</td>
-                    </tr>
-                    <tr>
-                      <td>Lash Perm</td>
-                      <td>$35+</td>
-                    </tr>
-                    <tr>
-                      <td>Permanent Makeup: Eyebrow</td>
-                      <td>$260+</td>
-                    </tr>
-                    <tr>
-                     <td>Permanent Makeup: Eyeline</td>
-                     <td>$300+</td>
-                    </tr>
-                    <tr>
-                      <td>Permanent Makeup: Lipline</td>
-                      <td>$150+</td>
-                    </tr>
-                    <tr>
-                      <td width="350px">Permanent Makeup: Full Lip</td>
-                      <td>$250+</td>
-                    </tr>
-                  </table>
-                  <h2 class="ser4">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; WAXING &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
-                  <table class="center3">
-                     <tr>
-                       <td>Full Leg</td>
-                       <td>$45+</td>
-                     </tr>
-                     <tr>
-                       <td>Half Leg</td>
-                       <td>$25+</td>
-                     </tr>
-                     <tr>
-                       <td>Bikini Line</td>
-                       <td>$18+</td>
-                     </tr>
-                     <tr>
-                       <td>Lip or Chin</td>
-                       <td>$6+</td>
-                     </tr>
-                     <tr>
-                      <td>Back</td>
-                      <td>$40+</td>
-                     </tr>
-                     <tr>
-                       <td>Brows</td>
-                       <td>$10+</td>
-                     </tr>
-                     <tr>
-                       <td width="350px">Facial Area</td>
-                       <td>$10+</td>
-                     </tr>
-                     <tr>
-                       <td>Under Arms</td>
-                       <td>$14+</td>
-                     </tr>
-                     <tr>
-                       <td>Full Arm</td>
-                       <td>$35+</td>
-                     </tr>
-                     <tr>
-                       <td>Half Arm</td>
-                       <td>$25+</td>
-                     </tr>
-                     <tr>
-                       <td>Chest</td>
-                       <td>$40+</td>
-                     </tr>
-                   </table>
-                 
-                   
-                </div>
+            <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
-
-      <a class="carousel-control-prev" href="#carouselExCtrl3" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-      <a class="carousel-control-next" href="#carouselExCtrl3" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    </div>
-
-  <br>
-  <br>
-<!-- Hours & Location -->
-<a name="hours&location" ></a>
-  <div id="carouselExCtrl2" class="carousel slide w-100"  data-ride="carousel" style="height: 740px !important; overflow-y: hidden;">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="clearfix carousel-container">
-          <img class="duo" src="clocks.jpg" alt="clocks">
-            <div class="sideinfo side-info-pane" style="background-color: #dde4e4">
-              <img class="duoim3" src="i1.png" alt="blowdryer">
-              
-            <h4 class="w1"> Come on over... </h4>
-            <h2 class="w2"> Our Hours </h2>
-            <br>
-           <div class="hours">
-              <h4><b>Monday - Saturday</b></h4>
-              <h5>10am - 6pm</h5>
-              <br>
-              <h4><b>Sunday</b></h4>
-             <h5>Closed</h5>
-            </div>
-
-            <div class="w5">
-              <h5><b><i>We're flexible.</i></b></h5> 
-              <h6>Call us to arrange an alternate date or time that fits
-                your schedule</h6>
-            </div>
-            <img class="decal" src="decall.png" alt="decal">
-            </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-item">
-        <div class="clearfix" style="width:100%">
-          <img class="duo" src="store.png" alt="storefront">
-            <div class="sideinfo side-info-pane" style="background-color: #dde4e4">
-              <img class="duoim3" src="i1.png" alt="blowdryer">
-              
-            <h4 class="w1"> Where to find us </h4>
-            <h2 class="w2"> Location </h2>
-              <p class="w3" margin-top="10px"> 68 James Street North, L8R 2K5 </p>
-              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d116.36477477021981!2d-79.86930426846615!3d43.259220936926184!2m2!1f119.01716493670882!2f45.00591550770618!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x0%3A0x1555d49452b2d96f!2sTotally+Nu+Yu!5e1!3m2!1sen!2sca!4v1547262860317" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <br>
-              <p class="w3"><i>In the heart of Hamilton, at the intersection of James + Rebecca Street</i></p>
-
-              </div>  
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExCtrl2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExCtrl2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
-    </div>
-
-
-  <br>
-  <br>
-
-<!-- Contact -->
-<a name="contact" ></a>
-  <div class="backp">
-    <img class="brick1" src="brick.jpg" alt="brickwall">
-    <div id="bkgrdcir">
-      <img class=duoim2 src="tele.png" alt="telephone">
-      <h3 class="w6"> Let's talk </h3>
-      <h5 class="app"><b>Make an appointment with us</b></h5>
-      <h4 id="num"><a href="tel:905-308-8226">(905)308-8226</a></h4>
-      <p></p>
-    </div>
-
-    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
   </div>
 
-  
-  
+  <!-- BOOTSTRAP HRS & LOCATION vvvvv -->
+  <a name="hours&location"></a>
+  <div
+      id="carouselExCtrl2"
+      class="carousel slide w-100"
+      data-ride="carousel"
+    >
+    <!-- ^went in that div style="height: 740px !important; overflow-y: hidden" -->
+    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="clearfix carousel-container">
+            <img class="duo3" src="imgs/clocks.jpg" alt="clocks" />
+            <div
+              class="hours-location-info hours-location-pane"
+              style="background-color: #dde4e4"
+            >
+              <img class="duoim3" src="imgs/i1.png" alt="blowdryer" />
 
+              <h4 class="w1">Come on over...</h4>
+              <h2 class="w2">Our Hours</h2>
+              <br />
+              <div class="hours">
+                <h4><b>Monday - Saturday</b></h4>
+                <h5>10am - 6pm</h5>
+                <br />
+                <h4><b>Sunday</b></h4>
+                <h5>Closed</h5>
+              </div>
 
+              <div class="w5">
+                <h5>
+                  <b><i>We're flexible.</i></b>
+                </h5>
+                <h6>
+                  Call us to arrange an alternate date or time that fits your
+                  schedule
+                </h6>
+              </div>
+              <img class="decal" src="imgs/decall.png" alt="decal" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="clearfix" style="width: 100%">
+            <img class="duo3" src="imgs/store.png" alt="storefront" />
+            <div
+              class="hours-location-info hours-location-pane"
+              style="background-color: #dde4e4"
+            >
+              <img class="duoim3" src="imgs/i1.png" alt="blowdryer" />
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+              <h4 class="w1">Where to find us</h4>
+              <h2 class="w2">Location</h2>
+              <p class="w3" margin-top="10px">68 James Street North, L8R 2K5</p>
+              <iframe
+                id="map"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d116.36477477021981!2d-79.86930426846615!3d43.259220936926184!2m2!1f119.01716493670882!2f45.00591550770618!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x0%3A0x1555d49452b2d96f!2sTotally+Nu+Yu!5e1!3m2!1sen!2sca!4v1547262860317"
+                width="400"
+                height="350"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen
+              ></iframe>
+              <p style="padding-top: 1em" class="w3">
+                <i>In the heart of Hamilton, at the intersection of James + Rebecca Street</i>
+              </p>
+            </div>
+          </div>
+        </div>
 
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button style="z-index: 1;" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+    <br />
 
-
- 
-
-      
-
-</body>
-
-
-
-
-            
+    <!-- Contact -->
+    <a name="contact"></a>
+    <div class="backp">
+      <img class="brick1" src="imgs/brick.jpg" alt="brickwall" />
+      <div id="bkgrdcir">
+        <img class="duoim2" src="imgs/tele.png" alt="telephone" />
+        <h3 class="w6">Let's talk</h3>
+        <h5 class="app"><b>Make an appointment with us</b></h5>
+        <h4 id="num"><a href="tel:905-308-8226">(905)308-8226</a></h4>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>
