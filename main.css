@@ -336,29 +336,11 @@ a[href^="tel"] {
   border-bottom: solid;
   font-family: "PT Serif Caption", serif;
 }
-.ser4 {
-  font-size: 23px;
-  border-bottom: solid;
-  font-family: "PT Serif Caption", serif;
-  margin-top: 50px;
-}
 .serp {
   box-sizing: border-box;
 }
 table.center {
   font-family: "Quicksand", sans-serif;
-}
-table.center1 {
-  font-family: "Quicksand", sans-serif;
-  margin-left: 25px;
-}
-table.center2 {
-  font-family: "Quicksand", sans-serif;
-  margin-left: 35px;
-}
-table.center3 {
-  font-family: "Quicksand", sans-serif;
-  margin-bottom: 50px;
 }
 #top {
   z-index: +1;
@@ -453,9 +435,6 @@ li a {
     width: 100%;
     height: 100%;
     }
-  .carousel-control-prev {
-    padding-left: 2em;
-  }
   .hours-location-info {
     width: 100%;
     height: 100%;
@@ -472,11 +451,14 @@ li a {
   .carousel-indicators { 
     margin-bottom: 2em;
   }
+  .hair-rmv{
+    margin-bottom: 2em;
+  }
   .data-container {
     padding: 3em 8em;
   }
   .ser {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 883px) {
@@ -495,9 +477,6 @@ li a {
   .our-services {
     margin-top: 4em;
     padding: 1em 3em;
-  }
-  .beauty-txt {
-    margin-top: 30px;
   }
   .data-container {
     padding: 1em 3em;
