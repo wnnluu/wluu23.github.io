@@ -33,21 +33,6 @@
     />
     <!-- boostrap bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-    <script>
-    function toggleMenu() {
-      var x = document.getElementById("menu");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-        console.log("boop");
-      } else {
-        x.className = "topnav";
-        console.log("shoop");
-      }
-    }
-    </script>
-
     <title>Totally Nu Yu Hair Salon</title>
   </head>
   <!-- BOOSTRAP NAV -->
@@ -79,8 +64,8 @@
 
   <body>
     <!-- Home Page  -->
-    <div class="homep">
-      <img class="brick" src="imgs/brick.jpg" alt="brick wall" />
+    <div class="home-page">
+      <img class="home-brick" src="imgs/brick.jpg" alt="brick wall" />
       <div class="bkgrdbox">
         <p class="welcomebox">Welcome &nbsp; to</p>
         <img class="scis" src="imgs/scissors.png" alt="scissors" />
@@ -94,7 +79,7 @@
     <!-- Stylists -->
     <a name="stylists"></a>
     <div class="clearfix" class="d-block w-100">
-      <img class="duo" src="imgs/trim.jpg" alt="trimming hair" />
+      <img class="duo-panel" src="imgs/trim.jpg" alt="trimming hair" />
       <div style="background-color: #dde4e4" class="sideinfo side-info-pane">
         <img class="duoim" src="imgs/i0.png" alt="scissors" />
         <h4 class="w1">Home to</h4>
@@ -119,7 +104,7 @@
     <!-- SERVICES vvvvvvv -->
     <a name="services"></a>
     <div class="clearfix">
-      <img class="duo1" src="imgs/blow.jpg" alt="blowdry" />
+      <img class="duo-panel-2" src="imgs/blow.jpg" alt="blowdry" />
       <div id="carouselExampleIndicators" class="carousel slide service-width" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -147,12 +132,11 @@
                   call or come in for a consultation.
                 </p>
                 <br />
-                <p class="w3">
+                <p class="note">
                   <i><u>Please note</u>:</i> prices are determined by the length &
-                  density<br />
-                  of hair examined in person. Taxes are not included.
+                  density of hair examined in person. <span>Taxes are not included.</span>
                 </p>
-                <img class="decal" src="imgs/decall.png" alt="decal" />
+                <img class="decal ser-decal" src="imgs/decall.png" alt="decal" />
               </div>
             </div>
           </div>
@@ -272,8 +256,6 @@
                 </table>
               </div>
             </div>
-            
-            <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -294,18 +276,16 @@
       class="carousel slide w-100"
       data-ride="carousel"
     >
-    <!-- ^went in that div style="height: 740px !important; overflow-y: hidden" -->
     <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="clearfix carousel-container">
-            <img class="duo3" src="imgs/clocks.jpg" alt="clocks" />
+            <img class="duo-panel-3" src="imgs/clocks.jpg" alt="clocks" />
             <div
               class="hours-location-info hours-location-pane"
               style="background-color: #dde4e4"
             >
               <img class="duoim3" src="imgs/i1.png" alt="blowdryer" />
-
               <h4 class="w1">Come on over...</h4>
               <h2 class="w2">Our Hours</h2>
               <br />
@@ -316,7 +296,6 @@
                 <h4><b>Sunday</b></h4>
                 <h5>Closed</h5>
               </div>
-
               <div class="w5">
                 <h5>
                   <b><i>We're flexible.</i></b>
@@ -332,7 +311,7 @@
         </div>
         <div class="carousel-item">
           <div class="clearfix" style="width: 100%">
-            <img class="duo3" src="imgs/store.png" alt="storefront" />
+            <img class="duo-panel-3" src="imgs/store.png" alt="storefront" />
             <div
               class="hours-location-info hours-location-pane"
               style="background-color: #dde4e4"
@@ -369,17 +348,16 @@
       </button>
     </div>
   </div>
-    <br />
-
+    
     <!-- Contact -->
     <a name="contact"></a>
-    <div class="backp">
-      <img class="brick1" src="imgs/brick.jpg" alt="brickwall" />
-      <div id="bkgrdcir">
+    <div class="btm-bkgrd">
+      <img class="brick2" src="imgs/brick.jpg" alt="brickwall" />
+      <div id="bkgrdcircle">
         <img class="duoim2" src="imgs/tele.png" alt="telephone" />
         <h3 class="w6">Let's talk</h3>
-        <h5 class="app"><b>Make an appointment with us</b></h5>
-        <h4 id="num"><a href="tel:905-308-8226">(905)308-8226</a></h4>
+        <h5 class="app-text"><b>Make an appointment with us</b></h5>
+        <h4 id="phone-num"><a href="tel:905-308-8226">(905)308-8226</a></h4>
         <p></p>
       </div>
     </div>
