@@ -197,7 +197,7 @@ td {
   box-sizing: content-box;
 }
 .duoim3 {
-  width: 15%;
+  width: 10%;
   height: 8%;
   text-align: center;
   box-sizing: content-box;
@@ -240,7 +240,7 @@ td {
 }
 .w5 {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 40px;
   font-family: "Quicksand", sans-serif;
 }
 .w6 {
@@ -308,7 +308,7 @@ a[href^="tel"] {
 }
 .hours {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: "Quicksand", sans-serif;
 }
 #map {
@@ -422,7 +422,6 @@ li a {
     width: 10%;
   }
   .duoim3 {
-    width: 10%;
     padding-top: 2em;
   }
   .sideinfo {
